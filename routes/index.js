@@ -13,6 +13,6 @@ router.get('/api/v1/data/country', indexControllers.getDataCountryofAPI);
 router.post('/api/v1/data/country', indexControllers.postDataCountry);
 
 // endpoint para obtener de la bd los datos de la API
-router.get('/api/v1/data/country', indexControllers.getDataOfDataBase);
+// router.get('/api/v1/data/country', indexControllers.getDataOfDataBase);
 
 module.exports = router;
