@@ -19,8 +19,10 @@ This application allows you to save all countries of Api and saved in database, 
 5. Start the application:
    - npm run dev
 
-6. Open Postman or Thunder Client to do the CRU (Create, Read and Update)  
+6. Open Postman or Thunder Client to do the CRU (Create, Read and Update)
+   - 1º: POST Method to save the data in the database
+   - 2º: Any of the other methods (GET or PUT)
 
-7. If you want, you can see the data in the browser also to:
+8. If you want, you can see the data in the browser also to:
   - See the countries of database in:   http://localhost:3000/api/v1/data/countries
   - See the country that you want, for example:  http://localhost:3000/api/v1/data/country/Andorra
