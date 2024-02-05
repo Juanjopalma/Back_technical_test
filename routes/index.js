@@ -4,10 +4,7 @@ const indexControllers = require('../controllers/indexControllers');
 
 /* GET users listing. */
 
-// http://localhost:3000/api/v1/data/country
-
-// endpoint para obtener los datos de la API
-// router.get('/api/v1/data/country', indexControllers.getDataCountryofAPI);
+// http://localhost:3000/
 
 // endpoint para almacenar los países de la API
 router.post('/api/v1/data/countries', indexControllers.postDataCountry);
