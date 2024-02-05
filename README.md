@@ -11,7 +11,7 @@ This application allows you to save all countries of Api and saved in database, 
    - git clone https://github.com/Juanjopalma/Back_technical_test.git
 
 2. Move to the application folder:
-   - cd server
+   - cd Back_technical_test
 
 4. Install the dependencies:
    - npm i
