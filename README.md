@@ -8,7 +8,7 @@ This application allows you to save all countries in database, moreover, you can
 
 ## Installation
 1. Clone this repository to your local machine: 
-   - git clone https://github.com/Juanjopalma/Front_technical_test.git
+   - git clone https://github.com/Juanjopalma/Back_technical_test.git
 
 2. Move to the application folder:
    - cd server
