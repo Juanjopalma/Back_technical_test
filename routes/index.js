@@ -9,13 +9,16 @@ const indexControllers = require('../controllers/indexControllers');
 // endpoint para obtener los datos de la API
 // router.get('/api/v1/data/country', indexControllers.getDataCountryofAPI);
 
-// endpoint para almacenar los datos de la API
+// endpoint para almacenar los países de la API
 router.post('/api/v1/data/countries', indexControllers.postDataCountry);
 
 // endpoint para obtener un país de la bd
-router.get('/api/v1/data/:country', indexControllers.getDataCountry);
+router.get('/api/v1/data/country/:country', indexControllers.getDataCountry);
 
 // endpoint para obtener todos los países de la bd
 router.get('/api/v1/data/countries', indexControllers.getDataCountries);
+
+// endpoint para actualizar todos los países de la bd
+router.put('/api/v1/data/putcountries', indexControllers.putDataCountries);
 
 module.exports = router;
