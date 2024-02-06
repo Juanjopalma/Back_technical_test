@@ -6,16 +6,16 @@ const indexControllers = require('../controllers/indexControllers');
 
 // http://localhost:3000/
 
-// endpoint para almacenar los países de la API
+// endpoint to save the countries in the database
 router.post('/api/v1/data/countries', indexControllers.postDataCountry);
 
-// endpoint para obtener un país de la bd
+// endpoint to get a country from the databse
 router.get('/api/v1/data/country/:country', indexControllers.getDataCountry);
 
-// endpoint para obtener todos los países de la bd
+// endpoint to get all the countries from the database
 router.get('/api/v1/data/countries', indexControllers.getDataCountries);
 
-// endpoint para actualizar todos los países de la bd
+// endpoint to update the countries from the database
 router.put('/api/v1/data/putcountries', indexControllers.putDataCountries);
 
 module.exports = router;
