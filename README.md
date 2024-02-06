@@ -1,6 +1,6 @@
 # API_Countries_Project 
 
-This application allows you to save all countries of Api and saved in database, moreover, you can get one country or all countries, and update the data of the countries or the data of one country in the database.
+This application allows you to save all countries of Api in the database, moreover, you can get one country or all countries, and update the countries data or the country data in the database.
 
 ## Prerequisites
 - Have Node installed
