@@ -55,21 +55,20 @@ class indexControllers {
   // Get one country of the Api 
   getDataCountry = (req, res) => {
     const country = req.params.country;
-    console.log(country);
 
     let sql = `SELECT * FROM country WHERE common_name = '${country}'`; 
 
     connection.query(sql, (err, results) => {
       if (err) {
-        console.log("Error to get the country of database", err);
-        return res.status(500).json({ error: "Error to get the country of database" });
+        console.log("Error while getting the country from the database", err);
+        return res.status(500).json({ error: "Error while getting the country from the database" });
       }
       else if (results.length === 0) { 
         console.log("You have written wrong the country or the country does not exist in the database");
         return res.status(400).json({ error: "You have written wrong the country or the country does not exist in the database" });
       }
       else { 
-        console.log("Got country of database");
+        console.log("Retrieve country from the database");
         return res.status(200).json(results)
       }
     })
@@ -81,11 +80,15 @@ class indexControllers {
 
     connection.query(sql, (err, results) => {
       if (err) {
-        console.log("Error to get the countries of database", err);
-        return res.status(500).json({ error: "Error to get the countries of database" });
+        console.log("Error while getting the countries from the database", err);
+        return res.status(500).json({ error: "Error while getting the countries from the database" });
+      }
+      else if (results.length === 0) {
+        console.log("The database is empty", err);
+        return res.status(500).json({ error: "The database is empty" });
       }
       else { 
-        console.log("Got countries of database");
+        console.log("Countries retrieve from the database");
         return res.status(200).json(results)
       }
     })
@@ -116,8 +119,8 @@ class indexControllers {
      
           connection.query(sql2, (err, result) => {
             if (err) {
-              console.log("Error to update the data of database", err);
-              return res.status(500).json({ message: "Error to update the data of database" });
+              console.log("Error while updating the data from the database", err);
+              return res.status(500).json({ message: "Error while updating the data from the database" });
             }
           })
         })
